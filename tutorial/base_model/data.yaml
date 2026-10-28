@@ -1,0 +1,10 @@
+data:
+  latent_dim: 16
+
+  data_dim: auto
+  num_cats: auto
+  cont_dim: auto
+
+  cvae_dim: 0
+  # cvae: false
+  cvae_aux: false

@@ -1,0 +1,28 @@
+mlp:
+  hidden_dim: 64
+  n_layers: 2
+  use_batchnorm: true
+  
+  # activation parameters
+  activation: lrelu
+  dropout: 0.1
+  slope: 0.1
+  scale: 1.0
+  
+vae:
+  catemb_dim: null
+  
+  # prior network
+  prior: null # default (gaussian)
+  net_mode: mean
+
+  # decoder
+  decoder: gaussian
+  decoder_var: 1.0
+  decoder_softmax: false # default
+  decoder_use_log1p: false # default
+  decoder_use_cnn: false # default
+
+  # encoder
+  encoder: null # default
+  encoder_use_bottleneck: true

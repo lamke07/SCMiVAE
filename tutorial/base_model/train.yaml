@@ -1,0 +1,34 @@
+train:
+  # beta VAE
+  beta_loss: 1
+  rec_num_rows: auto
+
+  # training
+  early_stopping_start: 25
+  epoch_checkpoint_freq: 25
+  epochs: 250
+  patience: 45
+
+  # other (default: not used)
+  max_norm: null
+
+  # use jacobian loss (default: not used)
+  jacobian_loss: false
+  jacobian_lambda: 0
+  jacobian_loss_mode: l1
+
+  # training
+  batch_size: 256
+  num_workers: 0
+  lr: 0.001
+  
+  # data splitting
+  include_val: false      # If false, train on 100% of data (no validation)
+  validation_split: 0.10  # 10% for validation (when include_val=false)
+  test_split: 0.05        # 5% for test set
+  random_seed: 42         # For reproducible splits
+
+device:
+  # device handling
+  device: auto
+  verbose: true

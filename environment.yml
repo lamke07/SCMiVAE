@@ -1,0 +1,14 @@
+name: scmivae
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - torch>=2.6.0
+    - numpy
+    - pandas
+    - scikit-learn
+    - matplotlib
+    - seaborn
+    - umap-learn
+    - anndata
+    - scipy
